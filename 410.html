@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>410 - Gone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen flex flex-col">
+        <header class="bg-white shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="text-2xl font-bold text-blue-600">Enterprise</div>
+                    <nav class="hidden md:flex space-x-6">
+                        <a href="/" class="text-gray-600 hover:text-blue-600 transition">Beranda</a>
+                        <a href="/support" class="text-gray-600 hover:text-blue-600 transition">Support</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow flex items-center justify-center px-4 py-12">
+            <div class="max-w-2xl w-full">
+                <div class="flex justify-center mb-8">
+                    <svg class="w-32 h-32 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"></path>
+                    </svg>
+                </div>
+
+                <div class="text-center">
+                    <h1 class="text-8xl md:text-9xl font-bold text-gray-200 mb-4">410</h1>
+                    <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-4">Resource Telah Dihapus</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Resource yang Anda cari telah dihapus secara permanen dan tidak akan tersedia lagi.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Kemungkinan Penyebab
+                    </h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <span>Konten telah dihapus secara permanen</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <span>Produk atau layanan sudah tidak tersedia</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <span>Halaman telah di-archive atau di-sunset</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <span>Campaign atau promo telah berakhir</span>
+                        </li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Apa yang Bisa Anda Lakukan?
+                    </h3>
+                    <ol class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="font-semibold text-blue-600 mr-2">1.</span>
+                            <span>Cari konten serupa di website kami</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-semibold text-blue-600 mr-2">2.</span>
+                            <span>Lihat produk atau layanan terbaru kami</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-semibold text-blue-600 mr-2">3.</span>
+                            <span>Update bookmark atau link yang tersimpan</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-semibold text-blue-600 mr-2">4.</span>
+                            <span>Hubungi kami untuk informasi alternatif</span>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <a href="/" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-200 text-center shadow-md">
+                        Kembali ke Beranda
+                    </a>
+                    <a href="/search" class="bg-white hover:bg-gray-50 text-gray-800 font-semibold px-8 py-3 rounded-lg border-2 border-gray-300 transition duration-200 text-center shadow-md">
+                        Cari Konten
+                    </a>
+                    <button onclick="history.back()" class="bg-white hover:bg-gray-50 text-gray-800 font-semibold px-8 py-3 rounded-lg border-2 border-gray-300 transition duration-200 shadow-md">
+                        Halaman Sebelumnya
+                    </button>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg p-6 text-center">
+                    <p class="text-sm text-gray-600 mb-2">
+                        <span class="font-semibold">Error Code:</span> 410 Gone
+                    </p>
+                    <p class="text-sm text-gray-600 mb-2">
+                        <span class="font-semibold">Timestamp:</span> <span id="timestamp"></span>
+                    </p>
+                    <p class="text-sm text-gray-600">
+                        <span class="font-semibold">Butuh bantuan?</span> Hubungi kami di <a href="mailto:support@enterprise.com" class="text-blue-600 hover:underline">support@enterprise.com</a>
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-white border-t border-gray-200 mt-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-600 text-sm mb-4 md:mb-0">
+                        © 2025 Enterprise. All rights reserved.
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="/privacy" class="text-gray-600 hover:text-blue-600 text-sm transition">Kebijakan Privasi</a>
+                        <a href="/terms" class="text-gray-600 hover:text-blue-600 text-sm transition">Syarat & Ketentuan</a>
+                        <a href="/contact" class="text-gray-600 hover:text-blue-600 text-sm transition">Kontak</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('timestamp').textContent = new Date().toLocaleString('id-ID');
+    </script>
+</body>
+</html>
