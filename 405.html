@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Halaman Tidak Ditemukan</title>
+    <title>405 - Method Not Allowed</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50">
@@ -26,17 +26,17 @@
             <div class="max-w-2xl w-full">
                 <!-- Icon -->
                 <div class="flex justify-center mb-8">
-                    <svg class="w-32 h-32 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    <svg class="w-32 h-32 text-orange-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path>
                     </svg>
                 </div>
 
                 <!-- Error Code -->
                 <div class="text-center">
-                    <h1 class="text-8xl md:text-9xl font-bold text-gray-200 mb-4">404</h1>
-                    <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-4">Halaman Tidak Ditemukan</h2>
+                    <h1 class="text-8xl md:text-9xl font-bold text-gray-200 mb-4">405</h1>
+                    <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-4">Metode Tidak Diizinkan</h2>
                     <p class="text-lg text-gray-600 mb-8">
-                        Maaf, halaman yang Anda cari tidak dapat ditemukan. Mungkin telah dipindahkan atau dihapus.
+                        Metode HTTP yang digunakan tidak diizinkan untuk resource ini.
                     </p>
                 </div>
 
@@ -51,19 +51,19 @@
                     <ul class="space-y-3 text-gray-700">
                         <li class="flex items-start">
                             <span class="text-blue-600 mr-2">•</span>
-                            <span>URL yang Anda masukkan salah atau typo</span>
+                            <span>Menggunakan GET saat seharusnya POST, atau sebaliknya</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-blue-600 mr-2">•</span>
-                            <span>Halaman telah dipindahkan ke lokasi lain</span>
+                            <span>API endpoint hanya menerima metode tertentu</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-blue-600 mr-2">•</span>
-                            <span>Link yang Anda klik sudah kadaluarsa atau rusak</span>
+                            <span>Konfigurasi server membatasi metode HTTP tertentu</span>
                         </li>
                         <li class="flex items-start">
                             <span class="text-blue-600 mr-2">•</span>
-                            <span>Konten telah dihapus atau tidak lagi tersedia</span>
+                            <span>Bug di client application atau form submission</span>
                         </li>
                     </ul>
 
@@ -71,24 +71,24 @@
                         <svg class="w-6 h-6 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
-                        Apa yang Bisa Anda Lakukan?
+                        Langkah Penyelesaian
                     </h3>
                     <ol class="space-y-3 text-gray-700">
                         <li class="flex items-start">
                             <span class="font-semibold text-blue-600 mr-2">1.</span>
-                            <span>Periksa kembali URL yang Anda masukkan</span>
+                            <span>Periksa dokumentasi API untuk metode yang benar</span>
                         </li>
                         <li class="flex items-start">
                             <span class="font-semibold text-blue-600 mr-2">2.</span>
-                            <span>Gunakan menu navigasi atau search untuk menemukan konten</span>
+                            <span>Refresh halaman dan coba submit ulang</span>
                         </li>
                         <li class="flex items-start">
                             <span class="font-semibold text-blue-600 mr-2">3.</span>
-                            <span>Kembali ke halaman sebelumnya atau beranda</span>
+                            <span>Gunakan form atau interface yang sesuai</span>
                         </li>
                         <li class="flex items-start">
                             <span class="font-semibold text-blue-600 mr-2">4.</span>
-                            <span>Hubungi kami jika Anda yakin ini adalah kesalahan</span>
+                            <span>Laporkan masalah ini ke tim developer jika terus terjadi</span>
                         </li>
                     </ol>
                 </div>
@@ -101,15 +101,15 @@
                     <button onclick="history.back()" class="bg-white hover:bg-gray-50 text-gray-800 font-semibold px-8 py-3 rounded-lg border-2 border-gray-300 transition duration-200 shadow-md">
                         Halaman Sebelumnya
                     </button>
-                    <a href="/search" class="bg-white hover:bg-gray-50 text-gray-800 font-semibold px-8 py-3 rounded-lg border-2 border-gray-300 transition duration-200 text-center shadow-md">
-                        Cari Konten
+                    <a href="/support" class="bg-white hover:bg-gray-50 text-gray-800 font-semibold px-8 py-3 rounded-lg border-2 border-gray-300 transition duration-200 text-center shadow-md">
+                        Hubungi Support
                     </a>
                 </div>
 
                 <!-- Technical Details -->
                 <div class="bg-gray-100 rounded-lg p-6 text-center">
                     <p class="text-sm text-gray-600 mb-2">
-                        <span class="font-semibold">Error Code:</span> 404 Not Found
+                        <span class="font-semibold">Error Code:</span> 405 Method Not Allowed
                     </p>
                     <p class="text-sm text-gray-600 mb-2">
                         <span class="font-semibold">Timestamp:</span> <span id="timestamp"></span>
