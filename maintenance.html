@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maintenance Mode - Sedang Pemeliharaan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="bg-white shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="text-2xl font-bold text-blue-600">Enterprise</div>
+                    <div class="flex items-center space-x-2">
+                        <div class="h-3 w-3 bg-yellow-500 rounded-full animate-pulse"></div>
+                        <span class="text-sm text-gray-600 font-medium">Maintenance Mode</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow flex items-center justify-center px-4 py-12">
+            <div class="max-w-3xl w-full">
+                <!-- Icon with Animation -->
+                <div class="flex justify-center mb-8">
+                    <div class="relative">
+                        <svg class="w-40 h-40 text-blue-600 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Main Message -->
+                <div class="text-center mb-8">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Sedang Dalam Pemeliharaan</h1>
+                    <p class="text-xl text-gray-600 mb-6">
+                        Kami sedang melakukan upgrade dan perbaikan sistem untuk memberikan pengalaman yang lebih baik untuk Anda.
+                    </p>
+                </div>
+
+                <!-- Maintenance Details Card -->
+                <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <!-- Timeline -->
+                        <div class="bg-blue-50 rounded-lg p-6">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center">
+                                <svg class="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Estimasi Waktu
+                            </h3>
+                            <div class="space-y-3">
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Mulai:</span>
+                                    <span class="font-semibold text-gray-800" id="startTime">-</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Selesai:</span>
+                                    <span class="font-semibold text-gray-800" id="endTime">-</span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="text-gray-600">Durasi:</span>
+                                    <span class="font-semibold text-blue-600">~2-4 Jam</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- What We're Doing -->
+                        <div class="bg-green-50 rounded-lg p-6">
+                            <h3 class="text-lg font-semibold text-gray-800 mb-4 flex items-center">
+                                <svg class="w-6 h-6 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                                Yang Kami Lakukan
+                            </h3>
+                            <ul class="space-y-2 text-gray-700">
+                                <li class="flex items-start">
+                                    <span class="text-green-600 mr-2">✓</span>
+                                    <span class="text-sm">Upgrade sistem keamanan</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-600 mr-2">✓</span>
+                                    <span class="text-sm">Optimasi performa database</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-600 mr-2">✓</span>
+                                    <span class="text-sm">Deploy fitur-fitur baru</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-green-600 mr-2">✓</span>
+                                    <span class="text-sm">Bug fixes & improvements</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="mt-8">
+                        <div class="flex justify-between text-sm text-gray-600 mb-2">
+                            <span>Progress</span>
+                            <span id="progressPercent">45%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                            <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full transition-all duration-500" style="width: 45%" id="progressBar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- What You Can Do -->
+                <div class="bg-white rounded-xl shadow-lg p-6 mb-8">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Apa Yang Bisa Anda Lakukan?
+                    </h3>
+                    <div class="grid md:grid-cols-3 gap-4">
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="text-3xl mb-2">☕</div>
+                            <p class="text-sm text-gray-700">Santai sebentar dan nikmati waktu istirahat</p>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="text-3xl mb-2">📱</div>
+                            <p class="text-sm text-gray-700">Follow social media kami untuk update real-time</p>
+                        </div>
+                        <div class="text-center p-4 bg-gray-50 rounded-lg">
+                            <div class="text-3xl mb-2">🔄</div>
+                            <p class="text-sm text-gray-700">Bookmark dan kembali dalam beberapa jam</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <button onclick="location.reload()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-200 shadow-lg flex items-center justify-center">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                        </svg>
+                        Cek Status
+                    </button>
+                    <a href="https://twitter.com/enterprise" target="_blank" class="bg-white hover:bg-gray-50 text-gray-800 font-semibold px-8 py-3 rounded-lg border-2 border-gray-300 transition duration-200 shadow-lg text-center flex items-center justify-center">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
+                        </svg>
+                        Follow untuk Update
+                    </a>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-xl shadow-lg p-6 text-center text-white">
+                    <p class="text-lg mb-2">
+                        <span class="font-semibold">Pertanyaan mendesak?</span> Hubungi kami
+                    </p>
+                    <p class="text-sm opacity-90">
+                        Email: <a href="mailto:support@enterprise.com" class="underline hover:text-blue-200">support@enterprise.com</a> | 
+                        Phone: <a href="tel:+6221xxxxxxxx" class="underline hover:text-blue-200">+62 21 XXXX XXXX</a>
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-white border-t border-gray-200 mt-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <div class="text-center text-gray-600 text-sm">
+                    <p>© 2025 Enterprise. Terima kasih atas kesabaran Anda.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Set timestamps
+        const now = new Date();
+        const endDate = new Date(now.getTime() + 3 * 60 * 60 * 1000); // +3 hours
+        
+        document.getElementById('startTime').textContent = now.toLocaleString('id-ID', { hour: '2-digit', minute: '2-digit' });
+        document.getElementById('endTime').textContent = endDate.toLocaleString('id-ID', { hour: '2-digit', minute: '2-digit' });
+
+        // Simulate progress (for demo)
+        let progress = 45;
+        setInterval(() => {
+            progress = Math.min(progress + 1, 95);
+            document.getElementById('progressBar').style.width = progress + '%';
+            document.getElementById('progressPercent').textContent = progress + '%';
+        }, 30000); // Update every 30 seconds
+
+        // Auto refresh every 5 minutes
+        setTimeout(() => location.reload(), 300000);
+    </script>
+</body>
+</html>
