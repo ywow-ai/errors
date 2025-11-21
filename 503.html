@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>503 - Service Unavailable</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <div class="min-h-screen flex flex-col">
+        <header class="bg-white shadow-sm">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+                <div class="flex items-center justify-between">
+                    <div class="text-2xl font-bold text-blue-600">Enterprise</div>
+                    <nav class="hidden md:flex space-x-6">
+                        <a href="/" class="text-gray-600 hover:text-blue-600 transition">Beranda</a>
+                        <a href="/support" class="text-gray-600 hover:text-blue-600 transition">Support</a>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="flex-grow flex items-center justify-center px-4 py-12">
+            <div class="max-w-2xl w-full">
+                <div class="flex justify-center mb-8">
+                    <svg class="w-32 h-32 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                </div>
+
+                <div class="text-center">
+                    <h1 class="text-8xl md:text-9xl font-bold text-gray-200 mb-4">503</h1>
+                    <h2 class="text-3xl md:text-4xl font-semibold text-gray-800 mb-4">Layanan Tidak Tersedia</h2>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Server sedang tidak dapat menangani permintaan saat ini. Silakan coba lagi nanti.
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Kemungkinan Penyebab
+                    </h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <span>Server sedang dalam maintenance terjadwal</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <span>Server overload karena traffic tinggi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <span>Resource server tidak mencukupi sementara</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-600 mr-2">•</span>
+                            <span>Deployment atau update sistem sedang berlangsung</span>
+                        </li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-4 flex items-center">
+                        <svg class="w-6 h-6 mr-2 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Apa yang Bisa Anda Lakukan?
+                    </h3>
+                    <ol class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="font-semibold text-blue-600 mr-2">1.</span>
+                            <span>Tunggu beberapa menit dan coba lagi</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-semibold text-blue-600 mr-2">2.</span>
+                            <span>Periksa status page untuk info maintenance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-semibold text-blue-600 mr-2">3.</span>
+                            <span>Bookmark halaman dan kembali nanti</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-semibold text-blue-600 mr-2">4.</span>
+                            <span>Follow social media untuk update terkini</span>
+                        </li>
+                    </ol>
+
+                    <div class="mt-6 bg-yellow-50 border-l-4 border-yellow-600 p-4 rounded">
+                        <p class="text-sm text-yellow-800">
+                            <span class="font-semibold">Estimasi:</span> Layanan diharapkan kembali normal dalam 5-30 menit. Terima kasih atas kesabaran Anda.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <button onclick="setTimeout(() => location.reload(), 30000)" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-200 shadow-md">
+                        Coba Lagi (30s)
+                    </button>
+                    <a href="/status" class="bg-white hover:bg-gray-50 text-gray-800 font-semibold px-8 py-3 rounded-lg border-2 border-gray-300 transition duration-200 text-center shadow-md">
+                        Cek Status
+                    </a>
+                    <a href="/" class="bg-white hover:bg-gray-50 text-gray-800 font-semibold px-8 py-3 rounded-lg border-2 border-gray-300 transition duration-200 text-center shadow-md">
+                        Kembali ke Beranda
+                    </a>
+                </div>
+
+                <div class="bg-gray-100 rounded-lg p-6 text-center">
+                    <p class="text-sm text-gray-600 mb-2">
+                        <span class="font-semibold">Error Code:</span> 503 Service Unavailable
+                    </p>
+                    <p class="text-sm text-gray-600 mb-2">
+                        <span class="font-semibold">Timestamp:</span> <span id="timestamp"></span>
+                    </p>
+                    <p class="text-sm text-gray-600">
+                        <span class="font-semibold">Butuh bantuan?</span> Hubungi kami di <a href="mailto:support@enterprise.com" class="text-blue-600 hover:underline">support@enterprise.com</a>
+                    </p>
+                </div>
+            </div>
+        </main>
+
+        <footer class="bg-white border-t border-gray-200 mt-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-600 text-sm mb-4 md:mb-0">
+                        © 2025 Enterprise. All rights reserved.
+                    </div>
+                    <div class="flex space-x-6">
+                        <a href="/privacy" class="text-gray-600 hover:text-blue-600 text-sm transition">Kebijakan Privasi</a>
+                        <a href="/terms" class="text-gray-600 hover:text-blue-600 text-sm transition">Syarat & Ketentuan</a>
+                        <a href="/contact" class="text-gray-600 hover:text-blue-600 text-sm transition">Kontak</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.getElementById('timestamp').textContent = new Date().toLocaleString('id-ID');
+    </script>
+</body>
+</html>
